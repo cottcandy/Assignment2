@@ -16,6 +16,7 @@
 }
 
 #map {
+    border-radius: 30px;
     width: 100%; 
     height: 100%; 
 }
@@ -44,4 +45,31 @@
     text-decoration: underline;
   }
   
-  
+/*minigmaes-1*/
+.gamecontainer{
+    outline-style: solid;
+    background-color: #DCDCDD;
+    border-radius: 10px;
+    height: 30rem;
+    padding: 2rem;
+    margin: 3rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.gamecontainer p{
+    margin-top:2rem;
+    font-size: 40px;
+}
+
+.startbox{
+    border-radius: 40px;
+    margin-top: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    background-color: grey;
+}
+
+.startbox p{
+    font-size: 40px;
+}
