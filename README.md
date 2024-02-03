@@ -1,7 +1,7 @@
 # Assignment2
 # Website for Covid-19 (SafeGlobe)
 
-Members: Zhang Lixin (S10258514) & Klaris Lim Yong Xin ()
+Members: Zhang Lixin (S10258514) & Klaris Lim Yong Xin (S10257959)
 
 One or two paragraphs providing an overview of your project. Tell us about your project.
 
@@ -60,12 +60,11 @@ If this section grows too long, you may want to split it off into a separate fil
 ### Content
 - The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
 
+
+
 ### Media
-- The photos used in this site were obtained from ...
+- 4 photo cards image obtained from : https://www.knowplango.my/?utm_source=Search&utm_medium=CPC&utm_campaign=KnowPlanGo&utm_id=SeriousMedia_Pfizer&utm_content=LandingPage&gclid=Cj0KCQiAnfmsBhDfARIsAM7MKi1zEPAsjryYweCahcAIrGmu0jANnKszmZ8smjPg1-Dxqz1_amPAolIaAnRhEALw_wcB
 
-home icon: https://www.vecteezy.com/vector-art/4843955-outline-home-icon-isolated-on-white-background-vector-eps10
-
-world icon: https://www.vecteezy.com/vector-art/6576237-earth-icon-line-icon-style-simple-design-editable-design-template-vector
 
 ### Acknowledgements
 
