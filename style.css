@@ -27,24 +27,7 @@
     margin-bottom: 2rem;
 }
 
-/* Footer */
-.footer {
-    margin:0;
-    background-color: #333;
-    color: #fff;
-    padding: 15px;
-    text-align: center;
-  }
-  
-  .footer a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .footer a:hover {
-    text-decoration: underline;
-  }
-  
+
 /*minigmaes-1*/
 .gamecontainer{
     outline-style: solid;
@@ -73,3 +56,28 @@
 .startbox p{
     font-size: 40px;
 }
+
+
+
+
+
+
+
+/* Footer */
+.footer {
+    margin:0;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
