@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head> 
+
+<body>
+    <a href="index.html" class="logo"><h3>SafeGlobe</h3></a>
+    <div class="header"> <h1>MINIGAME</h1> </div>
+    <div class="gamecontainer">
+        <div id="quiz-container">
+            <div id="question-container">
+            <img id="Billy" src="images/Billy.png" alt="logo" height="100" >
+            <div class="qn-bubble">
+                <p id="question-text"></p>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+            </div>
+            </div>
+            <div id="options-container">
+                <div class="option" onclick="checkAnswer(0)"></div>
+                <div class="option" onclick="checkAnswer(1)"></div>
+                <div class="option" onclick="checkAnswer(2)"></div>
+                <div class="option" onclick="checkAnswer(3)"></div>
+            </div>
+            <div id="result-container">
+                <p id="result-text"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Any suggestions or feedback? <a href="/email">Email</a> us!</p>
+      </div>
+    <script src="script.js"></script>
+        
+</body>
+</html>
