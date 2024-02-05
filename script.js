@@ -21,14 +21,24 @@ function redirectToPlayPage() {
 redirectToPlayPage();
 
 //minigame
+
 const quizData = [
     {
         question: "QUESTION HERE?",
         options: ["ANSWERRR", "ANSWERRRRRRR", "corRect ANSWERRR", "ANSWERR"],
         correctAnswer: "corRect ANSWERRR"
     },
+    {
+        question: "QUESTION HERE!!",
+        options: ["COrrcet", "ANSWERRRRRRR", "ANSWERRR", "ANSWERR"],
+        correctAnswer: "COrrcet"
+    },
+    {
+        question: "QUESTION HERE?!",
+        options: ["ANSWERRR", "Correct", "ANSWERRR", "ANSWERR"],
+        correctAnswer: "Correct"
+    }
 ];
-
 let currentQuestion = 0;
 let score = 0;
 
@@ -58,10 +68,17 @@ function showQuestion() {
 
     resultContainer.style.display = "none";
 }
-
-
 function checkAnswer(optionIndex) {
     const currentQuizData = quizData[currentQuestion];
+    const optionsElements = optionsContainer.getElementsByClassName("option");
+
+    for (let i = 0; i < currentQuizData.options.length; i++) {
+        if (currentQuizData.options[i] === currentQuizData.correctAnswer) {
+            optionsElements[i].classList.add("correct");
+        } else if (i === optionIndex) {
+            optionsElements[i].classList.add("wrong");
+        }
+    }
 
     if (currentQuizData.options[optionIndex] === currentQuizData.correctAnswer) {
         score++;
@@ -70,18 +87,52 @@ function checkAnswer(optionIndex) {
     currentQuestion++;
 
     if (currentQuestion < quizData.length) {
-        showQuestion();
+        setTimeout(() => {
+            showQuestion();
+        }, 1000);
     } else {
-        showResult();
+        setTimeout(() => {
+            showResult();
+        }, 1000);
     }
 }
-
 function showResult() {
+    const qnContainer = document.getElementById('question-container');
+    const resultTextElement = document.getElementById('result-text');
+    
+    qnContainer.style.display = 'none';
     optionsContainer.innerHTML = "";
     resultTextElement.innerText = `You scored ${score} out of ${quizData.length}.`;
 
+    if (score === quizData.length) {
+        setTimeout(() => {
+            window.location.href = 'email-input.html';
+        }, 3000);
+    }
+
     resultContainer.style.display = "block";
 }
-
-// Start the quiz when the page loads
 document.addEventListener("DOMContentLoaded", startQuiz);
+
+//email-input
+document.addEventListener("DOMContentLoaded", function() {
+    const emailInput = document.getElementById('emailInput');
+
+    emailInput.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+            handleEmailInput();
+        }
+    });
+
+    emailInput.addEventListener('blur', function() {
+        handleEmailInput();
+    });
+
+    function handleEmailInput() {
+        const enteredEmail = emailInput.value.trim();
+
+        if (enteredEmail !== '') {
+            window.location.href = 'minigame-finish.html';
+        }
+    }
+});

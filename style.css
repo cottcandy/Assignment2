@@ -69,9 +69,7 @@ body {
     text-decoration: none;
     color: inherit;
  }
- .logo:hover{
-    color: #333;
- }
+
  .header{
     display: flex;
     justify-content: center;
@@ -116,15 +114,17 @@ body {
     font-size: 40px;
 }
 
-.startbox{
+#startButton{
     border-radius: 40px;
     margin-top: 2rem;
     padding-left: 3rem;
     padding-right: 3rem;
     background-color: grey;
+    text-decoration: none;
+    color: white;
 }
 
-.startbox p{
+#startButton p{
     font-size: 40px;
 }
 
@@ -143,7 +143,7 @@ body {
 
 #question-container {
     margin-bottom: 20px;
-    display: inline-block;
+    display:flex
 }
 
 #options-container {
@@ -158,19 +158,68 @@ body {
 #Billy {
     display: inline-block;
     margin-right: 10px; 
+    height:12rem
 }
 #question-text {
     display: inline-block;
     border-radius: 50%;
     background-color: #ff8dba; 
     padding: 30px;
+    margin-top: 0;
+    margin-left: 3rem;
+    margin-bottom: 0;
 }
-.bubble{
-    width: 5px;
-    height: 5px;
+
+#bubble1{
+    width: 0.5rem;
+    height: 0.5rem;
     background-color: #ff8dba; 
     border-radius: 50%;
+    margin-left: 1rem;
 }
+#bubble2{
+    width: 0.25rem;
+    height: 0.25rem;
+    background-color: #ff8dba; 
+    border-radius: 50%;
+
+}
+
+.option.correct {
+    background-color: #5cb85c; 
+    color: #fff; 
+}
+
+.option.wrong {
+    background-color: #d9534f; 
+    color: #fff; 
+}
+
+/*Email input*/
+.email-container {
+    text-align: center;
+
+}
+.email-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#emailInput {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 60px; 
+    width:20rem;
+    text-align: center;
+
+}
+
+#emailInput:focus {
+    border-color: #007bff;
+}
+
 /* Footer */
 .footer {
     margin:0;
