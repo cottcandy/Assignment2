@@ -58,14 +58,19 @@ If this section grows too long, you may want to split it off into a separate fil
 ## Credits
 
 ### Content
-- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
+- The text for 4 bootstrap cards was obtained from: https://www.knowplango.my/?utm_source=Search&utm_medium=CPC&utm_campaign=KnowPlanGo&utm_id=SeriousMedia_Pfizer&utm_content=LandingPage&gclid=Cj0KCQiAnfmsBhDfARIsAM7MKi1zEPAsjryYweCahcAIrGmu0jANnKszmZ8smjPg1-Dxqz1_amPAolIaAnRhEALw_wcB
 
 
 
 ### Media
-- 4 photo cards image obtained from : https://www.knowplango.my/?utm_source=Search&utm_medium=CPC&utm_campaign=KnowPlanGo&utm_id=SeriousMedia_Pfizer&utm_content=LandingPage&gclid=Cj0KCQiAnfmsBhDfARIsAM7MKi1zEPAsjryYweCahcAIrGmu0jANnKszmZ8smjPg1-Dxqz1_amPAolIaAnRhEALw_wcB
+- 4 photo cards image obtained from: https://www.knowplango.my/?utm_source=Search&utm_medium=CPC&utm_campaign=KnowPlanGo&utm_id=SeriousMedia_Pfizer&utm_content=LandingPage&gclid=Cj0KCQiAnfmsBhDfARIsAM7MKi1zEPAsjryYweCahcAIrGmu0jANnKszmZ8smjPg1-Dxqz1_amPAolIaAnRhEALw_wcB
 
+- billy: https://www.google.com/url?sa=i&url=https%3A%2F%2Fiheartcraftythings.com%2Fcartoon-people-drawing.html&psig=AOvVaw2MqxtnsmjaaXK5bWSs9VRQ&ust=1707286286117000&source=images&cd=vfe&opi=89978449&ved=2ahUKEwiqlpeWh5aEAxW9TGwGHZENALEQjRx6BAgAEBc
 
+- background image: https://i.pinimg.com/564x/1d/e6/37/1de637aa47409992ad8817f3a9622086.jpg
+
+- quizbackground: https://www.pinterest.com/pin/87820261475868480/
+  
 ### Acknowledgements
 
 - I received inspiration for this project from X
