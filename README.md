@@ -3,52 +3,77 @@
 
 Members: Zhang Lixin (S10258514) & Klaris Lim Yong Xin (S10257959)
 
-One or two paragraphs providing an overview of your project. Tell us about your project.
+Our website, SafeGlobe, offers users an interactive platform to explore information about COVID-19 before embarking on their travels. Through engaging with our globe interface, users can enhance their understanding of the pandemic and its implications.
 
-Essentially, this part is your sales pitch.
- 
+Additionally, we feature a mini-game designed to test users' knowledge of COVID-19. Should a user achieve a perfect score, they can request a gift card to be sent to their email. However, this offer is limited to the first 10 users, and each email address is restricted to a single claim.
+
+SafeGlobe serves as a tool to promote COVID-19 awareness and empower users to make informed decisions about their travel plans. By highlighting key information on our homepage, we aim to provide users with valuable insights to help them assess whether traveling is advisable, especially with the relaxation of restrictions in certain regions.
+
+
 ## Design Process
- 
-Provide us insights about your design process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
-- As a user type, I want to perform an action, so that I can achieve a goal.
+Our design process for SafeGlobe focused on creating an engaging and informative platform that caters to users interested in travel and COVID-19 awareness. Here's an overview of our approach:
 
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. 
-These files should themselves either be included as a pdf file in the project itself (in an separate directory)
-Include the Adobe XD wireframe as a folder. You can include the XD share url. 
+Our target audience includes individuals who are planning or considering travel amid the COVID-19 pandemic. We also aim to reach users who are interested in learning more about COVID-19 and its impact on global travel.
+
+Provide users with an interactive globe/map interface to explore different regions of the world. Offer clear and concise information about COVID-19, focusing on key points that users should be aware of before traveling. Encourage users to stay informed about COVID-19 developments and make informed decisions regarding their travel plans.
+
+SafeGlobe provides users with an intuitive and visually appealing interface to explore the world and learn about COVID-19. By presenting the four main points of COVID-19 awareness prominently on the homepage, users can quickly grasp essential information before making travel decisions.
+
+wireframe: wireframe folder named FED Assignment2.xd
+link: https://xd.adobe.com/view/912ed4f3-5b55-4537-941a-0eb9fa86d7bf-c47d/
+
 
 ## Features
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
- 
+minigame.html:
+- Contains an interactive globe/map and 4 main points of COVID-19.
+- Includes a link prompting users to participate in the mini-game to win a gift card.
+
+minigame.html (Start):
+- Upon clicking the link, the user is directed to the minigame start page.
+- The start page prompts the user to click "Start" to begin the challenge.
+
+minigame-loading.html:
+- After clicking "Start," the user is redirected to the minigame loading page.
+- The loading page displays a Lottie animation to indicate that the game is loading.
+- The loading page automatically redirects the user to the minigame play page after 3 seconds.
+
+minigame-play-page.html:
+- The play page presents the user with 3 COVID-19 related questions.
+- Upon answering all questions correctly, the user is redirected to email-input.html to collect the gift card.
+- If the user answers incorrectly, they are directed back to index.html.
+
+For all the pages, if the user wishes to go back to index.html, the user can click on the logo "SafeGlobe" that has a hover effect.
+
+
 ### Existing Features
 - Feature 1 - allows users X to achieve Y, by having them fill out Z
 - ...
 
 In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
 
+
 ### Features Left to Implement
-- Another feature idea
+- Another feature idea..
+
 
 ## Technologies Used
-
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
-
-- [JQuery](https://jquery.com)
-    - The project uses **JQuery** to simplify DOM manipulation.
+- Used bootstrap in index.html for the 4 cards. (https://getbootstrap.com/docs/4.0/components/card/)
+- Used lottie animation for minigame-loading.html. (https://lottiefiles.com/search?q=loading&category=animations)
+- Used RestDB for the email-input.html for data collection. (https://restdb.io/)
+- Used mapbox API for the interactive map/globe (https://docs.mapbox.com/mapbox-gl-js/example/simple-map/) 
 
 
 ## Testing
+1. Redirecting after completing the quiz:
+    1. Score of 0/3, 1/3 and 2/3 will show a Nice Try!.. message and redirecting to index.html
+    2. Score of 3/3 will show a Congratulations!.. message and redirecting to email-input.html
 
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
-
-1. Contact form:
-    1. Go to the "Contact Us" page
-    2. Try to submit the empty form and verify that an error message about the required fields appears
-    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-    4. Try to submit the form with all inputs valid and verify that a success message appears.
-
+2. Collection of gift card:
+    1. After the user inputs their email, it sends an email to the user with a 6 digit number to claim.
+    2. Ensuring that it is limited to first 10 unique email
+   
 In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
 
 You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
@@ -61,7 +86,6 @@ If this section grows too long, you may want to split it off into a separate fil
 - The text for 4 bootstrap cards was obtained from: https://www.knowplango.my/?utm_source=Search&utm_medium=CPC&utm_campaign=KnowPlanGo&utm_id=SeriousMedia_Pfizer&utm_content=LandingPage&gclid=Cj0KCQiAnfmsBhDfARIsAM7MKi1zEPAsjryYweCahcAIrGmu0jANnKszmZ8smjPg1-Dxqz1_amPAolIaAnRhEALw_wcB
 
 
-
 ### Media
 - 4 photo cards image obtained from: https://www.knowplango.my/?utm_source=Search&utm_medium=CPC&utm_campaign=KnowPlanGo&utm_id=SeriousMedia_Pfizer&utm_content=LandingPage&gclid=Cj0KCQiAnfmsBhDfARIsAM7MKi1zEPAsjryYweCahcAIrGmu0jANnKszmZ8smjPg1-Dxqz1_amPAolIaAnRhEALw_wcB
 
@@ -71,6 +95,7 @@ If this section grows too long, you may want to split it off into a separate fil
 
 - quizbackground: https://www.pinterest.com/pin/87820261475868480/
   
+  
 ### Acknowledgements
 
-- I received inspiration for this project from X
+- I received inspiration for this project from: https://www.knowplango.my/?utm_source=Search&utm_medium=CPC&utm_campaign=KnowPlanGo&utm_id=SeriousMedia_Pfizer&utm_content=LandingPage&gclid=Cj0KCQiAnfmsBhDfARIsAM7MKi1zEPAsjryYweCahcAIrGmu0jANnKszmZ8smjPg1-Dxqz1_amPAolIaAnRhEALw_wcB

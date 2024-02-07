@@ -104,30 +104,9 @@ function showResult() {
     resultTextElement.innerText = `You scored ${score} out of ${quizData.length}.`;
 
     if (score === quizData.length) {
-        const APIKEY = "65c1d4fd72864d2e50dcbf86";
-        const checkSettings = {
-            method: "GET",
-            headers: {
-                "Content-Type": "application/json",
-                "x-apikey": APIKEY,
-                "Cache-Control": "no-cache"
-            }
-        };
-
-        fetch("https://assignment2-0234.restdb.io/rest/email-list", checkSettings)
-            .then(response => response.json())
-            .then(data => {
-                if (data.length >= 10) {
-                    // Fully redeemed, display a message
-                    resultTextElement.innerText = 'The rewards are now fully redeemed, sorry :(';
-                
-                } else {
-                    // Not fully redeemed, proceed to email-input page
-                    setTimeout(() => {
-                        window.location.href = 'email-input.html';
-                    }, 3000);
-                }
-            })
+        setTimeout(() => {
+            window.location.href = 'email-input.html';
+        }, 3000);
     }
 
     resultContainer.style.display = "block";
