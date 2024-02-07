@@ -21,7 +21,6 @@ function redirectToPlayPage() {
 redirectToPlayPage();
 
 //minigame
-
 const quizData = [
     {
         question: "QUESTION HERE?",
@@ -99,16 +98,12 @@ function checkAnswer(optionIndex) {
 function showResult() {
     const qnContainer = document.getElementById('question-container');
     const resultTextElement = document.getElementById('result-text');
-    
+
     qnContainer.style.display = 'none';
     optionsContainer.innerHTML = "";
-    if (score < 3) {
-        resultTextElement.innerText = `You scored ${score} out of ${quizData.length}.\n\nNice Try! However, you have failed the quiz :(\n\nYou will be redirected to the main page in 5 seconds`;
-        setTimeout(() => {
-            window.location.href = 'index.html';
-        }, 5000);
-    } else {
-        resultTextElement.innerText = `Congratulations!\n\nYou scored ${score} out of ${quizData.length}.`
+    resultTextElement.innerText = `You scored ${score} out of ${quizData.length}.`;
+
+    if (score === quizData.length) {
         setTimeout(() => {
             window.location.href = 'email-input.html';
         }, 3000);
@@ -116,27 +111,76 @@ function showResult() {
 
     resultContainer.style.display = "block";
 }
+
 document.addEventListener("DOMContentLoaded", startQuiz);
 
 //email-input
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
+    const APIKEY = "65c1d4fd72864d2e50dcbf86";
     const emailInput = document.getElementById('emailInput');
+    const emailSubmitButton = document.getElementById('email-submit');
+    const addUpdateMsg = document.getElementById('add-update-msg');
 
-    emailInput.addEventListener('keydown', function(event) {
+    emailInput.addEventListener('keydown', function (event) {
         if (event.key === 'Enter') {
             handleEmailInput();
         }
     });
 
-    emailInput.addEventListener('blur', function() {
+    emailInput.addEventListener('blur', function () {
         handleEmailInput();
     });
+
+    function isValidEmail(email) {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+    }
+
+    function showMsg(message, isSuccess) {
+        addUpdateMsg.innerText = message;
+        addUpdateMsg.style.color = isSuccess ? 'green' : 'red';
+        addUpdateMsg.style.display = 'block';
+
+        setTimeout(function () {
+            addUpdateMsg.style.display = 'none';
+        }, 3000);
+    }
 
     function handleEmailInput() {
         const enteredEmail = emailInput.value.trim();
 
-        if (enteredEmail !== '') {
-            window.location.href = 'minigame-finish.html';
+        if (isValidEmail(enteredEmail)) {
+            const jsonData = { "email": enteredEmail };
+            const settings = {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "x-apikey": APIKEY,
+                    "Cache-Control": "no-cache"
+                },
+                body: JSON.stringify(jsonData),
+                beforeSend: function () {
+                    emailSubmitButton.disabled = true;
+                }
+            };
+
+            fetch("https://assignment2-0234.restdb.io/rest/email-list", settings)
+                .then(response => response.json())
+                .then(() => {
+                    
+                    emailSubmitButton.disabled = false;
+                    showMsg('Email successfully submitted.', true);
+
+                    setTimeout(function () {
+                        window.location.href = 'minigame-finish.html';
+                    }, 3000);
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    showMsg('An error occurred. Please try again later.', false);
+                });
+        } else {
+            showMsg('Invalid email. Please enter a valid email address.', false);
         }
     }
 });
