@@ -6,6 +6,7 @@
     <title>Assignment 2</title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
 </head> 
 
 <body>
@@ -18,7 +19,10 @@
     <div class="gamecontainer">
         <p>Defend the world, beat the virus!</p>
         <p>Click START to win amazing prizes :D</p>
-        <a id="startButton" href="minigame-loading.html">START</a>
+        <div id="startcontainer">
+            <a id="startButton" href="minigame-loading.html">START</a>
+            <dotlottie-player id="covidman"src="https://lottie.host/ce19baeb-4744-47b8-995b-adfd9307939a/k4yeaYHHWd.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+        </div>
     </div>
 
     <div class="footer">

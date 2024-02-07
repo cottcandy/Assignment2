@@ -23,19 +23,19 @@ redirectToPlayPage();
 //minigame
 const quizData = [
     {
-        question: "QUESTION HERE?",
-        options: ["ANSWERRR", "ANSWERRRRRRR", "corRect ANSWERRR", "ANSWERR"],
-        correctAnswer: "corRect ANSWERRR"
+        question: "Which of the following is NOT typically recommended as a preventive measure against COVID-19? ",
+        options: ["Regular handwashing", "Avoiding close contact with sick individuals", "Cleaning and disinfecting frequently touched surfaces", "Sharing personal items with others"],
+        correctAnswer: "Sharing personal items with others"
     },
     {
-        question: "QUESTION HERE!!",
-        options: ["COrrcet", "ANSWERRRRRRR", "ANSWERRR", "ANSWERR"],
-        correctAnswer: "COrrcet"
+        question: "What is the primary purpose of wearing a mask during the COVID-19 pandemic? ",
+        options: ["To keep the face warm", "To shield the eyes from sunlight", "To protect against respiratory droplets", "To improve facial appearance"],
+        correctAnswer: "To protect against respiratory droplets"
     },
     {
-        question: "QUESTION HERE?!",
-        options: ["ANSWERRR", "Correct", "ANSWERRR", "ANSWERR"],
-        correctAnswer: "Correct"
+        question: "What is the recommended duration for proper handwashing to effectively remove viruses, including COVID-19?",
+        options: ["5 seconds", "15 seconds", "30 seconds", "1 minute"],
+        correctAnswer: "15 seconds"
     }
 ];
 let currentQuestion = 0;

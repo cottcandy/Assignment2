@@ -78,11 +78,11 @@ body {
 
 /*minigame*/
 .gamecontainer{
-    background-image: url('images/quizbackground.jpg'); /* specify the path to your background image */
-    background-size: cover; /* cover the entire container */
-    background-position: center; /* center the background image */
-    padding: 20px; /* add padding to your content */
-    text-align: center; /* center align the content */
+    background-image: url('images/quizbackground.jpg'); 
+    background-size: cover;
+    background-position: center; 
+    padding: 20px; 
+    text-align: center; 
     outline-style: solid;
     background-color: #DCDCDD;
     border-radius: 10px;
@@ -94,35 +94,58 @@ body {
     flex-direction: column;
 }
 
+
+.gamecontainer p {
+    margin-top: 2rem;
+    font-size: 40px;
+}
+
+
 .gamecontainer p{
     margin-top:2rem;
     font-size: 40px;
 }
-
+#startcontainer{
+    display: flex;
+}
 #startButton{
     border-radius: 40px;
     margin-top: 2rem;
     padding-left: 3rem;
     padding-right: 3rem;
-    background-color: grey;
+    background-color: #d3575d;
     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    width: 11rem;
     color: white;
+    font-size: 30px;
+    margin-left: 17.5rem;
 }
-
 #startButton p{
     font-size: 40px;
+}
+#covidman{
+    height:200px;
+    width: 300px;
 }
 
 /*minigame-play*/
 .option {
-    width: 100px; 
-    height: 40px; 
+    width: 10rem;
+    height: 5rem;
     border-radius: 8px;
     padding: 10px;
-    margin: 10px;
+    margin-right: 1rem;
+    margin-left: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: #efa04c;
-    cursor: pointer; 
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #question-container {
@@ -140,30 +163,33 @@ body {
 }
 
 #Billy {
-    display: inline-block;
-    margin-right: 10px; 
-    height:12rem
+    margin-right: 10px;
+    height: 20rem;
 }
 #question-text {
-    display: inline-block;
     border-radius: 50%;
-    background-color: #ff8dba; 
+    background-color: #ff8dba;
     padding: 30px;
     margin-top: 0;
     margin-left: 3rem;
     margin-bottom: 0;
+    height: 8rem;
+    width: 30rem;
+    display: flex;
+    align-items: center;
 }
 
 #bubble1{
-    width: 0.5rem;
-    height: 0.5rem;
-    background-color: #ff8dba; 
+    width: 2rem;
+    height: 2rem;
+    background-color: #ff8dba;
     border-radius: 50%;
-    margin-left: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
 }
 #bubble2{
-    width: 0.25rem;
-    height: 0.25rem;
+    width: 1rem;
+    height: 1rem;
     background-color: #ff8dba; 
     border-radius: 50%;
 
