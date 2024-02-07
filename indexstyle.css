@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'ArialBoldItalic';
+    src: url('fonts/Arial_Bold_Italic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ArialBold';
+    src: url('fonts/Arial_Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ArialItalic';
+    src: url('fonts/Arial_Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arial';
+    src: url('fonts/Arial.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CalibriBoldItalic';
+    src: url('fonts/Calibri\ Bold\ Italic.ttf Bold Italic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'CalibriRegular';
+    src: url('fonts/Calibri\ Regular.ttf Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MS PGothic';
+    src: url('fonts/MS\ PGothic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: 'Calibri', sans-serif;
+}
+
+/* Logo styling */
+.logo {
+    margin-left: 50px;
+    margin-top: 25px;
+    font-size: 25px;
+    font-family: 'MS PGothic', sans-serif;
+}
+
+/* Header styling */
+.header {
+    font-family: 'ArialBold', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+/*index*/
+.mapcontainer {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-bottom: 2rem;
+    height: 400px; 
+}
+
+#map {
+    border-radius: 30px;
+    width: 100%; 
+    height: 100%; 
+}
+
+.message 
+{
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.message a:hover{
+    text-decoration: none;
+    color: lightblue;
+}
+
+/* Footer */
+.footer {
+    margin:0;
+    background-color: #005b5b;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: none;
+    color: lightblue;
+  }
+  

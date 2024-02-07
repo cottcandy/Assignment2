@@ -4,28 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 2</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
 </head> 
 
 <body>
-    <a href="index.html" class="logo"><h3>SafeGlobe</h3></a>
-    <div class="header"> <h1>MINIGAME</h1> </div>
+    <div class ="logo">
+        <a href="index.html">SafeGlobe</a>
+    </div>
+
+    <div class="header">MINIGAME</div>
+
     <div class="gamecontainer">
         <div id="quiz-container">
             <div id="question-container">
-            <img id="Billy" src="images/Billy.png" alt="logo" >
-            <div class="qn-bubble">
-                <div id="question-text"></div>
-                <div id="bubble1"></div>
-                <div id="bubble2"></div>
+                <img id="Billy" src="images/Billy.png" alt="logo" >
+                <div class="qn-bubble">
+                    <p id="question-text"></p>
+                    <div id="bubble1"></div>
+                    <div id="bubble2"></div>
+                </div>
             </div>
-            </div>
+
             <div id="options-container">
                 <div class="option" onclick="checkAnswer(0)"></div>
                 <div class="option" onclick="checkAnswer(1)"></div>
                 <div class="option" onclick="checkAnswer(2)"></div>
                 <div class="option" onclick="checkAnswer(3)"></div>
             </div>
+
             <div id="result-container">
                 <p id="result-text"></p>
             </div>
@@ -33,9 +40,9 @@
     </div>
 
     <div class="footer">
-        <p>Any suggestions or feedback? <a href="/email">Email</a> us!</p>
-      </div>
+        <p>Any suggestions or feedback? <a href="s10258514@connect.np.edu.sg">Email us!</a></p>
+    </div>
+
     <script src="script.js"></script>
-        
 </body>
 </html>
