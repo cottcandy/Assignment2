@@ -249,6 +249,13 @@ body {
     border-color: #007bff;
 }
 
+#email-submit {
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 80px; 
+}
+
 /* Footer */
 .footer {
     margin:0;
@@ -274,6 +281,10 @@ body {
     .logo {
         margin: 20px;
         font-size: 20px;
+    }
+
+    .header {
+        font-size: small;
     }
 
     /*minigame*/
@@ -359,6 +370,45 @@ body {
         width: 3rem;
         height: 3rem;
     }    
+
+    /* email-input */
+    .email-container {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #emailInput {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 60px; 
+        width: 250px;
+        text-align: center;
+        margin-bottom: 20px; 
+        margin-top: 20px;
+    }
+
+    #email-submit {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 12px;
+        width: 80px; 
+        margin-bottom: auto;
+        margin-top: 5px;
+    }
+    
+    #add-update-msg {
+        text-align: center;
+        font-size: 14px;
+        color: #555;
+    }
+
+    /* minigame-finish */
+
 
     .footer {
         padding: 10px;
