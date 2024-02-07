@@ -102,9 +102,13 @@ function showResult() {
     
     qnContainer.style.display = 'none';
     optionsContainer.innerHTML = "";
-    resultTextElement.innerText = `You scored ${score} out of ${quizData.length}.`;
-
-    if (score === quizData.length) {
+    if (score < 3) {
+        resultTextElement.innerText = `You scored ${score} out of ${quizData.length}.\n\nNice Try! However, you have failed the quiz :(\n\nYou will be redirected to the main page in 5 seconds`;
+        setTimeout(() => {
+            window.location.href = 'index.html';
+        }, 5000);
+    } else {
+        resultTextElement.innerText = `Congratulations!\n\nYou scored ${score} out of ${quizData.length}.`
         setTimeout(() => {
             window.location.href = 'email-input.html';
         }, 3000);

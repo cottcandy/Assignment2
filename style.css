@@ -47,15 +47,6 @@
     font-style: normal;
 }
 
-body {
-    background-image: url('images/background.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    margin: 0;
-    padding: 0;
-    font-family: 'Calibri', sans-serif;
-}
-
 /* Logo styling */
 .logo {
     margin: 50px;
@@ -64,7 +55,12 @@ body {
     text-decoration: none;
 }
 
-.logo:hover {
+.logo a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo a:hover {
     text-decoration: none;
     color: teal;
 }
@@ -76,13 +72,22 @@ body {
     font-family: 'ArialBold', sans-serif;
 }
 
+body {
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: 'Calibri', sans-serif;
+}
+
 /*minigame*/
 .gamecontainer{
-    background-image: url('images/quizbackground.jpg'); /* specify the path to your background image */
-    background-size: cover; /* cover the entire container */
-    background-position: center; /* center the background image */
-    padding: 20px; /* add padding to your content */
-    text-align: center; /* center align the content */
+    background-image: url('images/quizbackground.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    padding: 20px; 
+    text-align: center; 
     outline-style: solid;
     background-color: #DCDCDD;
     border-radius: 10px;
@@ -211,15 +216,86 @@ body {
     color: #fff;
     padding: 15px;
     text-align: center;
-  }
+}
   
-  .footer a {
+.footer a {
     color: #fff;
     text-decoration: none;
-  }
+}
   
-  .footer a:hover {
+.footer a:hover {
     text-decoration: none;
     color: lightblue;
-  }
-  
+}
+
+
+/* Mobile Queries */
+@media only screen and (max-width: 600px) {
+    .logo {
+        margin: 20px;
+        font-size: 20px;
+    }
+
+    .header {
+        font-size: medium;
+    }
+
+    .gamecontainer {
+        padding: 1rem;
+        height: auto;
+        margin: 2rem;
+    }
+
+    .gamecontainer p {
+        font-size: 30px;
+    }
+
+    #startButton {
+        margin-top: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        font-size: 30px;
+    }
+
+    .option {
+        width: 80px;
+        height: 30px;
+        padding: 5px;
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    #question-container p {
+        font-size: 16px;
+    }
+
+    #Billy {
+        height: 8rem;
+    }
+
+    #question-text {
+        padding: 20px;
+        margin-left: 1rem;
+    }
+
+    #bubble1 {
+        width: 0.4rem;
+        height: 0.4rem;
+        margin-left: 0.5rem;
+    }
+
+    #bubble2 {
+        width: 0.2rem;
+        height: 0.2rem;
+    }
+
+    #emailInput {
+        width: 15rem;
+        font-size: 16px;
+    }
+
+    .footer {
+        padding: 10px;
+        font-size: 12px;
+    }
+}
