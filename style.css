@@ -209,6 +209,20 @@ body {
     background-color: #d9534f; 
     color: #fff; 
 }
+#result-container{
+    display: flex;
+    justify-content: center;
+}
+#sadlottie {
+    display: none;
+    margin-left:16.5rem;
+    width: 5rem;
+    height: 5rem;
+}
+#loading{
+    display:none;
+    margin-left: 1rem;
+}
 
 /*Email input*/
 .email-container {

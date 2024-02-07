@@ -103,7 +103,15 @@ function showResult() {
     optionsContainer.innerHTML = "";
     resultTextElement.innerText = `You scored ${score} out of ${quizData.length}.`;
 
+    const loadingAnimation = document.getElementById('loading');
+    
+
     if (score === quizData.length) {
+            loadingAnimation.style.display = 'block';
+        setTimeout(() => {
+            loadingAnimation.style.display = 'none';
+        }, 1000)
+
         const APIKEY = "65c1d4fd72864d2e50dcbf86";
         const checkSettings = {
             method: "GET",
@@ -118,11 +126,16 @@ function showResult() {
             .then(response => response.json())
             .then(data => {
                 if (data.length >= 10) {
-                    // Fully redeemed, display a message
-                    resultTextElement.innerText = 'The rewards are now fully redeemed, sorry :(';
+                    
+                    resultTextElement.innerText = 'The rewards are now fully redeemed, sorry :(\n\nYou will be redirected to the main page in 5 seconds';
+                    setTimeout(() => {
+                        document.getElementById('sadlottie').style.display = 'block';
+                    });
+                    setTimeout(() => { 
+                        window.location.href = 'index.html'; 
+                    }, 5000); 
                 
                 } else {
-                    // Not fully redeemed, proceed to email-input page
                     setTimeout(() => {
                         window.location.href = 'email-input.html';
                     }, 3000);
@@ -130,7 +143,13 @@ function showResult() {
             })
     
     }
-    else {resultTextElement.innerText = `You scored ${score} out of ${quizData.length}.\n\nNice Try! However, you have failed the quiz :(\n\nYou will be redirected to the main page in 5 seconds`; 
+    
+    
+    else {
+        resultTextElement.innerText = `You scored ${score} out of ${quizData.length}.\n\nNice Try! However, you have failed the quiz :(\n\nYou will be redirected to the main page in 5 seconds`; 
+        setTimeout(() => {
+            document.getElementById('sadlottie').style.display = 'block';
+        });
         setTimeout(() => { 
             window.location.href = 'index.html'; 
         }, 5000); }

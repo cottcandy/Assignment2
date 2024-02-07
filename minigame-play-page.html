@@ -6,6 +6,7 @@
     <title>Assignment 2</title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
 </head> 
 
 <body>
@@ -34,8 +35,13 @@
             </div>
 
             <div id="result-container">
-                <p id="result-text"></p>
+                <p id="result-text"></p>           
+                <dotlottie-player id="loading" src="https://lottie.host/0dfa1e33-853b-4246-927a-8b6b2283449f/lKsMBsVSo2.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+                <dotlottie-player id="sadlottie" src="https://lottie.host/1d1c04b7-f34c-4e08-b88e-17a7b9f6bd25/PnGmJA64Qx.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
             </div>
+
+           
+
         </div>
     </div>
 
