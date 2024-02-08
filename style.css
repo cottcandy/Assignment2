@@ -241,6 +241,11 @@ body {
     width: 80px; 
 }
 
+/*minigame-finish*/
+#star {
+    margin-left: 10rem;
+}
+
 /* Footer */
 .footer {
     margin:0;
@@ -409,7 +414,9 @@ body {
     }
 
     /* minigame-finish */
-
+    #star {
+        margin-left: 0.5rem;
+    }
 
     .footer {
         padding: 10px;
