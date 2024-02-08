@@ -23,6 +23,7 @@ SafeGlobe provides users with an intuitive and visually appealing interface to e
 wireframe: wireframe folder named FED Assignment2.xd
 link: https://xd.adobe.com/view/912ed4f3-5b55-4537-941a-0eb9fa86d7bf-c47d/
 
+github.io link: https://cottcandy.github.io/Assignment2/
 
 ## Features
 
