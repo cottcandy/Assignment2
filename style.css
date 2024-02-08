@@ -29,7 +29,8 @@
 /* Logo styling */
 .logo {
     margin: 50px;
-    font-size: 25px;
+    margin-bottom: 20px;
+    font-size: 30px;
     font-family: 'MS PGothic', sans-serif;
     text-decoration: none;
 }
@@ -265,6 +266,9 @@ body {
     color: lightblue;
 }
 
+#copyrights {
+    margin-bottom: 0;
+}
 
 @media only screen and (max-width: 768px) {
     /* Logo styling */

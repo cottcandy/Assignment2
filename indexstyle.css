@@ -113,17 +113,21 @@ body {
     color: #fff;
     padding: 15px;
     text-align: center;
- }
+}
   
- .footer a {
+.footer a {
     color: #fff;
     text-decoration: none;
- }
+}
   
- .footer a:hover {
+.footer a:hover {
     text-decoration: none;
     color: lightblue;
- }
+}
+
+#copyrights {
+    margin-bottom: 0;
+}
 
   
 /* Mobile Queries */
