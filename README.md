@@ -71,7 +71,7 @@ For all the pages, if the user wishes to go back to index.html, the user can cli
    
 The project looks and works on different browsers and screen sizes.
 
-### BUG
+### Bug
 After the user gets 3/3 for our minigame, the loading lottie disappears after a few seconds, which makes the container feel very empty.
 
 ## Credits
