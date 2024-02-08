@@ -47,16 +47,8 @@ minigame-play-page.html:
 
 For all the pages, if the user wishes to go back to index.html, the user can click on the logo "SafeGlobe" that has a hover effect.
 
-
-### Existing Features
-- Feature 1 - allows users X to achieve Y, by having them fill out Z
-- ...
-
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
-
-
 ### Features Left to Implement
-- Another feature idea..
+- We would like to make the world map interactive that when you click on a country, it shows the statistics for the country.
 
 
 ## Technologies Used
@@ -73,13 +65,13 @@ In addition, you may also use this section to discuss plans for additional featu
 
 2. Collection of gift card:
     1. After the user inputs their email, it sends an email to the user with a 6 digit number to claim.
-    2. Ensuring that it is limited to first 10 unique email
+    2. Ensuring that it is limited to first 10 unique email.
+    3. Ensures that email that has been entered is in correct email format.
    
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+The project looks and works on different browsers and screen sizes.
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+### BUG
+After the user gets 3/3 for our minigame, the loading lottie disappears after a few seconds, which makes the container feel very empty.
 
 ## Credits
 
