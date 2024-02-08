@@ -76,6 +76,7 @@ body {
 
 .mb-4 {
     height: 26rem;
+    border-radius: 20px
 }
 
 .video-box {
@@ -144,6 +145,10 @@ body {
     .mapcontainer {
         padding-left: 1rem;
         padding-right: 1rem;
+    }
+
+    #map {
+        border-radius: 0;
     }
 
     .video-section{
