@@ -49,6 +49,7 @@ For all the pages, if the user wishes to go back to index.html, the user can cli
 
 ### Features Left to Implement
 - We would like to make the world map interactive that when you click on a country, it shows the statistics for the country.
+- We would like to have a function which sends an auto generated email to the user's email with a giftcard to congratulate them.
 
 
 ## Technologies Used
