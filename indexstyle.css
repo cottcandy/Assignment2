@@ -1,21 +1,7 @@
 @font-face {
-    font-family: 'ArialBoldItalic';
-    src: url('fonts/Arial_Bold_Italic.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
     font-family: 'ArialBold';
     src: url('fonts/Arial_Bold.ttf') format('truetype');
     font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'ArialItalic';
-    src: url('fonts/Arial_Italic.ttf') format('truetype');
-    font-weight: normal;
     font-style: normal;
 }
 
@@ -24,13 +10,6 @@
     src: url('fonts/Arial.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-}
-
-@font-face {
-    font-family: 'CalibriBoldItalic';
-    src: url('fonts/Calibri\ Bold\ Italic.ttf Bold Italic.ttf') format('truetype');
-    font-weight: bold;
-    font-style: italic;
 }
 
 @font-face {
@@ -85,6 +64,30 @@ body {
     height: 100%; 
 }
 
+.video-section {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Calibri', sans-serif;
+    margin: 20px 40px; 
+    font-size:35px;
+    padding-left: 5px;
+}
+
+.video-box {
+    width: calc(33.33% - 20px); 
+    height: 200px;
+    margin-right: 22px;
+    justify-content: center;
+    display: inline-block;
+    vertical-align: top; 
+    overflow: visible;
+    padding-bottom: 5%;
+}
+
+.video-box:hover{
+    opacity: 0.7;
+}
+
 .message 
 {
     text-decoration: none;
@@ -136,6 +139,19 @@ body {
     .mapcontainer {
         padding-left: 1rem;
         padding-right: 1rem;
+    }
+
+    .video-section{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .video-box {
+        width: 100%;
+        margin-right: 0;
+        padding-bottom: 30%;
+        padding-right: 10%;
     }
 
     .message {

@@ -1,21 +1,7 @@
 @font-face {
-    font-family: 'ArialBoldItalic';
-    src: url('fonts/Arial_Bold_Italic.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
     font-family: 'ArialBold';
     src: url('fonts/Arial_Bold.ttf') format('truetype');
     font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'ArialItalic';
-    src: url('fonts/Arial_Italic.ttf') format('truetype');
-    font-weight: normal;
     font-style: normal;
 }
 
@@ -24,13 +10,6 @@
     src: url('fonts/Arial.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-}
-
-@font-face {
-    font-family: 'CalibriBoldItalic';
-    src: url('fonts/Calibri\ Bold\ Italic.ttf Bold Italic.ttf') format('truetype');
-    font-weight: bold;
-    font-style: italic;
 }
 
 @font-face {
@@ -228,15 +207,17 @@ body {
 }
 
 /*Email input*/
-.email-container {
-    text-align: center;
-
+.image-box {
+    display: flex;
+    justify-content: center;
 }
+
 .email-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
+    text-align: center;
 }
 
 #emailInput {
@@ -253,6 +234,7 @@ body {
 }
 
 #email-submit {
+    margin-left: 1rem;
     border: none;
     border-radius: 20px;
     cursor: pointer;
@@ -347,7 +329,7 @@ body {
         margin-right: 0.5rem;
         margin-left: 0.5rem;
         margin-bottom: 0.5rem;
-        font-size: 15px;
+        font-size: 10px;
     }
     #Billy {
         margin-right: 0;
