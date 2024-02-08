@@ -209,10 +209,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 .then(response => response.json())
                 .then(data => {
                     if (data.length === 0) {
-                        // if email does not exist, proceed to submit
+                        // If email does not exist, proceed to submit
                         submitEmail(enteredEmail);
                     } else {
-                        // if email already exists, show error message
+                        // If email already exists, show error message
                         showMsg('Email already exists. Please use a different email address.', false);
                     }
                 })

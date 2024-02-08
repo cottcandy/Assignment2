@@ -29,7 +29,8 @@
 /* Logo styling */
 .logo {
     margin: 50px;
-    font-size: 25px;
+    margin-bottom: 20px;
+    font-size: 30px;
     font-family: 'MS PGothic', sans-serif;
     text-decoration: none;
 }
@@ -244,6 +245,11 @@ body {
     width: 80px; 
 }
 
+/*minigame-finish*/
+#star {
+    margin-left: 10rem;
+}
+
 /* Footer */
 .footer {
     margin:0;
@@ -263,6 +269,9 @@ body {
     color: lightblue;
 }
 
+#copyrights {
+    margin-bottom: 0;
+}
 
 @media only screen and (max-width: 768px) {
     /* Logo styling */
@@ -412,7 +421,9 @@ body {
     }
 
     /* minigame-finish */
-
+    #star {
+        margin-left: 0.5rem;
+    }
 
     .footer {
         padding: 10px;

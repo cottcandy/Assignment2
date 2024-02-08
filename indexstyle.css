@@ -68,9 +68,15 @@ body {
     display: flex;
     justify-content: space-evenly;
     font-family: 'Calibri', sans-serif;
-    margin: 20px 40px; 
+    margin-left: 1rem;
+    margin-bottom: 3rem;
     font-size:35px;
     padding-left: 5px;
+}
+
+.mb-4 {
+    height: 26rem;
+    border-radius: 20px
 }
 
 .video-box {
@@ -107,17 +113,21 @@ body {
     color: #fff;
     padding: 15px;
     text-align: center;
- }
+}
   
- .footer a {
+.footer a {
     color: #fff;
     text-decoration: none;
- }
+}
   
- .footer a:hover {
+.footer a:hover {
     text-decoration: none;
     color: lightblue;
- }
+}
+
+#copyrights {
+    margin-bottom: 0;
+}
 
   
 /* Mobile Queries */
@@ -141,6 +151,10 @@ body {
         padding-right: 1rem;
     }
 
+    #map {
+        border-radius: 0;
+    }
+
     .video-section{
         display: flex;
         flex-wrap: wrap;
@@ -150,6 +164,7 @@ body {
     .video-box {
         width: 100%;
         margin-right: 0;
+        margin-bottom: 3rem;
         padding-bottom: 30%;
         padding-right: 10%;
     }
