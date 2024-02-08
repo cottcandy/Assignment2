@@ -73,6 +73,7 @@ body {
     height: 30rem;
     padding: 2rem;
     margin: 3rem;
+    margin-bottom: 0;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -210,6 +211,7 @@ body {
 .image-box {
     display: flex;
     justify-content: center;
+    box-shadow: 10px 5px 5px #81848b;
 }
 
 .email-container {
@@ -218,6 +220,7 @@ body {
     align-items: center;
     height: 100%;
     text-align: center;
+    margin-left: 6rem;
 }
 
 #emailInput {
