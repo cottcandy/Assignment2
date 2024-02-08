@@ -43,6 +43,11 @@ body {
     font-family: 'MS PGothic', sans-serif;
 }
 
+.logo h3:hover {
+    text-decoration: none;
+    color: teal;
+}
+
 /* Header styling */
 .header {
     font-family: 'ArialBold', sans-serif;
