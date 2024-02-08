@@ -29,6 +29,7 @@ link: https://xd.adobe.com/view/912ed4f3-5b55-4537-941a-0eb9fa86d7bf-c47d/
 minigame.html:
 - Contains an interactive globe/map and 4 main points of COVID-19.
 - Includes a link prompting users to participate in the mini-game to win a gift card.
+- Has three educational videos for users to learn more about Covid-19
 
 minigame.html (Start):
 - Upon clicking the link, the user is directed to the minigame start page.
@@ -88,6 +89,8 @@ If this section grows too long, you may want to split it off into a separate fil
 
 ### Media
 - 4 photo cards image obtained from: https://www.knowplango.my/?utm_source=Search&utm_medium=CPC&utm_campaign=KnowPlanGo&utm_id=SeriousMedia_Pfizer&utm_content=LandingPage&gclid=Cj0KCQiAnfmsBhDfARIsAM7MKi1zEPAsjryYweCahcAIrGmu0jANnKszmZ8smjPg1-Dxqz1_amPAolIaAnRhEALw_wcB
+
+-The three educational videos are obtained from: https://www.youtube.com/watch?v=R-JbDMYmAQM, https://www.youtube.com/watch?v=FC4soCjxSOQ, and https://www.youtube.com/watch?v=rAj38E7vrS8
 
 - billy: https://www.google.com/url?sa=i&url=https%3A%2F%2Fiheartcraftythings.com%2Fcartoon-people-drawing.html&psig=AOvVaw2MqxtnsmjaaXK5bWSs9VRQ&ust=1707286286117000&source=images&cd=vfe&opi=89978449&ved=2ahUKEwiqlpeWh5aEAxW9TGwGHZENALEQjRx6BAgAEBc
 
