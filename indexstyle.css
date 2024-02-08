@@ -156,10 +156,6 @@ body {
         padding-right: 1rem;
     }
 
-    #map {
-        border-radius: 0;
-    }
-
     .video-section{
         display: flex;
         flex-wrap: wrap;
